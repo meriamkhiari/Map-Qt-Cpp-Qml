@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>test</class>
+ <widget class="QMainWindow" name="test">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1188</width>
+    <height>695</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lineEdit_recherche">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>150</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_stat">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>290</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Modern Transparent Button Style with Hover Effect */
+QPushButton {
+  background-color: transparent; /* Transparent background */
+  color: #ffffff; /* White text color initially */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Customize font size */
+  font-family: Arial, sans-serif; /* Modern font */
+  font-weight: bold; /* Make the text bold */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect */
+QPushButton:hover {
+  background-color: #e0e8f5; /* Soft blue background on hover */
+  color: #6a1ca2; /* Purple text color on hover */
+}
+
+/* Pressed effect */
+QPushButton:pressed {
+  background-color: #3a0a54; /* Deepest purple when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Statistique</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/stat.png</normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/stat.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Acceuil">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>130</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Modern Transparent Button Style with Hover Effect */
+QPushButton {
+  background-color: transparent; /* Transparent background */
+  color: #ffffff; /* White text color initially */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Customize font size */
+  font-family: Arial, sans-serif; /* Modern font */
+  font-weight: bold; /* Make the text bold */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect */
+QPushButton:hover {
+  background-color: #e0e8f5; /* Soft blue background on hover */
+  color: #6a1ca2; /* Purple text color on hover */
+}
+
+/* Pressed effect */
+QPushButton:pressed {
+  background-color: #3a0a54; /* Deepest purple when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Acceuil</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/14.png</normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/14.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>70</width>
+      <height>70</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_export">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>350</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Modern Transparent Button Style with Hover Effect */
+QPushButton {
+  background-color: transparent; /* Transparent background */
+  color: #ffffff; /* White text color initially */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Customize font size */
+  font-family: Arial, sans-serif; /* Modern font */
+  font-weight: bold; /* Make the text bold */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect */
+QPushButton:hover {
+  background-color: #e0e8f5; /* Soft blue background on hover */
+  color: #6a1ca2; /* Purple text color on hover */
+}
+
+/* Pressed effect */
+QPushButton:pressed {
+  background-color: #3a0a54; /* Deepest purple when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>    Export</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/pdf.png</normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/pdf.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_desc">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>150</y>
+      <width>51</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent;
+    border: none;  /* Remove button border if needed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/desc.png</normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/desc.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_recherche">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>150</y>
+      <width>31</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent;
+    border: none;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/recheche.png</normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/recheche.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Delete">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>140</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent;
+    border: none;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/delete.png</normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/delete.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>190</y>
+      <width>521</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Style the QTableView */
+QTableView {
+    background-color: #f5f5f5; /* Light gray background */
+    alternate-background-color: #e0e0e0; /* Slightly darker alternate rows */
+    border: 1px solid #cc80f0; /* Mauve border */
+    gridline-color: #d3d3d3; /* Light gray gridlines */
+    selection-background-color: #a6a6a6; /* Gray background for selected cells */
+}
+
+/* Style the QTableView cells */
+QTableView::item {
+    padding: 5px; /* Add some padding inside cells */
+    border-bottom: 1px solid #cc80f0; /* Mauve bottom border for cells */
+    border-right: 1px solid #cc80f0; /* Mauve right border for cells */
+}
+
+/* Style the header section */
+QHeaderView::section {
+    background-color: #cc80f0; /* Mauve header background */
+    color: #ffffff; /* White text color for headers */
+    padding: 6px; /* Add padding inside headers */
+    border-bottom: 1px solid #cc80f0; /* Mauve bottom border for headers */
+    border-right: 1px solid #cc80f0; /* Mauve right border for headers */
+}
+
+/* Style the vertical scrollbar */
+QScrollBar:vertical {
+    border: 1px solid #cc80f0; /* Mauve border for vertical scrollbar */
+    background: #f5f5f5; /* Light gray background for scrollbar */
+    width: 10px; /* Set scrollbar width */
+    margin: 0px 0px 0px 0px;
+}
+
+/* Style the scrollbar handle */
+QScrollBar::handle:vertical {
+    background: #cc80f0; /* Mauve handle color */
+    min-height: 20px; /* Set minimum handle height */
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_map">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>450</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Modern Transparent Button Style with Hover Effect */
+QPushButton {
+  background-color: transparent; /* Transparent background */
+  color: #ffffff; /* White text color initially */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Customize font size */
+  font-family: Arial, sans-serif; /* Modern font */
+  font-weight: bold; /* Make the text bold */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect */
+QPushButton:hover {
+  background-color: #e0e8f5; /* Soft blue background on hover */
+  color: #6a1ca2; /* Purple text color on hover */
+}
+
+/* Pressed effect */
+QPushButton:pressed {
+  background-color: #3a0a54; /* Deepest purple when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>      Map</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/map.png</normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/map.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>38</width>
+      <height>37</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_asc">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>150</y>
+      <width>51</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Style for QPushButton */
+QPushButton {
+    background-color: transparent;
+    border: none;  /* Remove button border if needed */
+}
+
+/* Style for qpushbutton_asc with tooltip */
+qpushbutton_asc {
+    position: relative;
+    display: inline-block;
+}
+
+qpushbutton_asc::after {
+    content: &quot;Trier par ordre croissant&quot;;
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    bottom: 125%; /* Position above the button */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+qpushbutton_asc:hover::after {
+    display: block; /* Show tooltip on hover */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/asc.png</normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/asc.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_calendar">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>400</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Modern Transparent Button Style with Hover Effect */
+QPushButton {
+  background-color: transparent; /* Transparent background */
+  color: #ffffff; /* White text color initially */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Customize font size */
+  font-family: Arial, sans-serif; /* Modern font */
+  font-weight: bold; /* Make the text bold */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect */
+QPushButton:hover {
+  background-color: #e0e8f5; /* Soft blue background on hover */
+  color: #6a1ca2; /* Purple text color on hover */
+}
+
+/* Pressed effect */
+QPushButton:pressed {
+  background-color: #3a0a54; /* Deepest purple when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>  Calendrier</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/calendar.png</normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/calendar.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>49</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Update">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>140</y>
+      <width>100</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Ignored" vsizetype="Maximum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent;
+    border: none;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/edit.png</normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/edit.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>58</height>
+     </size>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>130</y>
+      <width>233</width>
+      <height>347</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>ID reservation</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_id_reservation_2">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    border: 2px solid #999; /* Bordure de 2px solide avec une couleur grise */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 5px; /* Espacement intérieur */
+    font-size: 14px; /* Taille de la police */
+}
+
+QLineEdit:focus {
+    border-color: #0078d7; /* Couleur de la bordure lorsque le champ de texte est sélectionné */
+}
+
+QLineEdit::hover {
+    border-color: #666; /* Couleur de la bordure au survol */
+}
+</string>
+             </property>
+             <property name="readOnly">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>date début</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QDateEdit" name="dateEdit_debut_2">
+             <property name="styleSheet">
+              <string notr="true">QDateEdit QLineEdit {
+    border: 2px solid #999;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+QDateEdit QLineEdit:focus {
+    border-color: #0078d7;
+}
+
+QDateEdit QLineEdit:hover {
+    border-color: #666;
+}
+
+</string>
+             </property>
+             <property name="minimumDateTime">
+              <datetime>
+               <hour>0</hour>
+               <minute>0</minute>
+               <second>0</second>
+               <year>2024</year>
+               <month>3</month>
+               <day>4</day>
+              </datetime>
+             </property>
+             <property name="displayFormat">
+              <string>d/M/yyyy</string>
+             </property>
+             <property name="calendarPopup">
+              <bool>true</bool>
+             </property>
+             <property name="date">
+              <date>
+               <year>2024</year>
+               <month>3</month>
+               <day>4</day>
+              </date>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>date fin</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QDateEdit" name="dateEdit_fin_2">
+             <property name="styleSheet">
+              <string notr="true">QDateEdit QLineEdit {
+    border: 2px solid #999;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+QDateEdit QLineEdit:focus {
+    border-color: #0078d7;
+}
+
+QDateEdit QLineEdit:hover {
+    border-color: #666;
+}
+</string>
+             </property>
+             <property name="minimumDateTime">
+              <datetime>
+               <hour>0</hour>
+               <minute>0</minute>
+               <second>0</second>
+               <year>2024</year>
+               <month>1</month>
+               <day>4</day>
+              </datetime>
+             </property>
+             <property name="minimumDate">
+              <date>
+               <year>2024</year>
+               <month>1</month>
+               <day>4</day>
+              </date>
+             </property>
+             <property name="displayFormat">
+              <string>d/M/yyyy</string>
+             </property>
+             <property name="calendarPopup">
+              <bool>true</bool>
+             </property>
+             <property name="date">
+              <date>
+               <year>2024</year>
+               <month>4</month>
+               <day>4</day>
+              </date>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>Vous voulez réserver un:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_projet_2">
+           <property name="styleSheet">
+            <string notr="true">/* Style de la case à cocher (QCheckBox) */
+QCheckBox {
+    color: black; /* Couleur du texte */
+}
+
+/* Style de l'indicateur (case non cochée) */
+QCheckBox::indicator:unchecked {
+    background-color: white; /* Couleur de fond */
+    border: 1px solid #5A5A5A; /* Bordure plus sombre */
+    /* Autres propriétés personnalisées si nécessaire */
+}
+
+/* Style de l'indicateur (case cochée) */
+QCheckBox::indicator:checked {
+    background-color: #cc80f0; /* Même couleur pour l'état cochée */
+    border: 1px solid #5A5A5A; /* Bordure plus sombre */
+    /* Autres styles supplémentaires si nécessaire */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Projet</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_formation_2">
+           <property name="styleSheet">
+            <string notr="true">/* Style de la case à cocher (QCheckBox) */
+QCheckBox {
+    color: black; /* Couleur du texte */
+}
+
+/* Style de l'indicateur (case non cochée) */
+QCheckBox::indicator:unchecked {
+    background-color: white; /* Couleur de fond */
+    border: 1px solid #5A5A5A; /* Bordure plus sombre */
+    /* Autres propriétés personnalisées si nécessaire */
+}
+
+/* Style de l'indicateur (case cochée) */
+QCheckBox::indicator:checked {
+    background-color: #cc80f0; /* Même couleur pour l'état cochée */
+    border: 1px solid #5A5A5A; /* Bordure plus sombre */
+    /* Autres styles supplémentaires si nécessaire */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Formation</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>Salle</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_num_salle_2">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    border: 2px solid #999; /* Bordure de 2px solide avec une couleur grise */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 5px; /* Espacement intérieur */
+    font-size: 14px; /* Taille de la police */
+}
+
+QLineEdit:focus {
+    border-color: #0078d7; /* Couleur de la bordure lorsque le champ de texte est sélectionné */
+}
+
+QLineEdit::hover {
+    border-color: #666; /* Couleur de la bordure au survol */
+}
+
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>prix</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_prix_2">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    border: 2px solid #999; /* Bordure de 2px solide avec une couleur grise */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 5px; /* Espacement intérieur */
+    font-size: 14px; /* Taille de la police */
+}
+
+QLineEdit:focus {
+    border-color: #0078d7; /* Couleur de la bordure lorsque le champ de texte est sélectionné */
+}
+
+QLineEdit::hover {
+    border-color: #666; /* Couleur de la bordure au survol */
+}
+
+</string>
+             </property>
+             <property name="readOnly">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonInsert_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: transparent;
+    border: none;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/12.png</normaloff>../../../Desktop/2A8/C++Projet/Safety_Copy/2a8-fablab_projet_qt-GM-GS-GR-GF-GP - Copy/assets/12.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1188</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
